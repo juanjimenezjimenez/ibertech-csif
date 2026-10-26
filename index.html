@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ibertech × CSIF · Oposiciones sanitarias CAM">
-<meta property="og:description" content="Preparación del temario oficial completo de cada oposición, tema por tema. 20 % en matrícula y mensualidad para afiliados CSIF y familiares de primer grado.">
+<meta property="og:description" content="Dos tarifas, la misma preparación: 280 € de matrícula + 160 €/mes con el convenio CSIF. Temario oficial completo de cada oposición.">
 <meta name="theme-color" content="#2E3C3D">
 <title>Oposiciones sanitarias CAM · Subinspección Sanitaria A2 y TSSP Psicología · Ibertech × CSIF</title>
 <meta name="description" content="Preparación del temario oficial completo de las oposiciones sanitarias de la Comunidad de Madrid, tema por tema. Subinspección Sanitaria A2 y TSSP Psicología. 20 % de descuento para afiliados CSIF y familiares de primer grado.">
@@ -85,6 +85,74 @@
   .hrow .go{margin-left:auto;color:#FFB800;font-size:18px;font-weight:700}
   .hcard .hc-foot{font-size:12px;color:#C3C9C8;margin-top:10px;text-align:center;
                   border-top:1px solid rgba(255,255,255,.12);padding-top:11px}
+  .hc-price{margin-top:12px;border-top:1px solid rgba(255,255,255,.14);padding-top:11px;
+            display:flex;flex-direction:column;gap:7px}
+  .hc-price div{display:flex;align-items:baseline;gap:6px;font-size:12.5px;color:#C3C9C8}
+  .hc-price div.csif{color:#7BE3B4;font-weight:700}
+  .hc-price b{color:#fff;font-size:16.5px;font-weight:800}
+  .hc-price s{color:#8C9799;font-size:13px}
+  .hc-price b.old{color:#8C9799;font-size:13.5px;font-weight:600;text-decoration:line-through}
+  .hc-price .tag20{background:#FFB800;color:#2E3C3D;font-size:10px;font-weight:800;
+      letter-spacing:.06em;padding:2px 6px;border-radius:4px}
+  .hc-price div.csif b{color:#7BE3B4}
+  .hc-price span{font-size:12px}
+  .hc-price i{font-style:normal;color:#8C9799}
+  .ptab{width:100%;border-collapse:collapse;margin-top:26px;background:#fff;
+        border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .ptab th,.ptab td{padding:15px 18px;text-align:left;font-size:15.5px;border-bottom:1px solid var(--line)}
+  .ptab thead th{background:var(--soft);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+                 color:#55625F;font-weight:800}
+  .ptab tbody tr:last-child td{border-bottom:0}
+  .ptab td.num{font-weight:800;color:#12201F;white-space:nowrap}
+  .ptab td.num.csif{color:#14795A}
+  .ptab tfoot td{background:#F4F8F6;font-weight:800;font-size:15px}
+  .ptab .ahorro{color:#14795A}
+  @media(max-width:620px){
+    .ptab th,.ptab td{padding:11px 12px;font-size:14px}
+    .ptab thead th{font-size:10px;letter-spacing:.08em}
+  }
+
+  /* ---- bloque comercial de precios ---- */
+  .plans{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;margin-top:30px;align-items:stretch}
+  .plan{border-radius:16px;padding:32px 30px 30px;position:relative;border:1px solid var(--line)}
+  .plan .badge20{position:absolute;top:20px;right:20px;background:var(--cyan);color:#2E3C3D;
+      font-size:11.5px;font-weight:800;letter-spacing:.08em;padding:6px 11px;border-radius:999px}
+  .plan .who{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:14px}
+  .plan .big{font-size:clamp(38px,4.4vw,52px);font-weight:800;line-height:1;letter-spacing:-1.5px}
+  .plan .big small{font-size:15px;font-weight:600;letter-spacing:0;color:inherit;opacity:.75}
+  .plan .pl{font-size:15px;margin-top:6px;color:inherit;opacity:.85}
+  .plan .total{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);
+      font-size:15.5px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .plan .total b{font-size:25px;letter-spacing:-.5px;white-space:nowrap}
+  .plan .save{margin-top:10px;font-size:14.5px;font-weight:800;color:#7BE3B4}
+  .plan .cond{margin-top:14px;font-size:12.5px;line-height:1.45;opacity:.72}
+  .plan{display:flex;flex-direction:column}
+  .plan .who, .plan .big{margin-top:0}
+  .plan .inc{margin-bottom:18px}
+  .plan .inc{margin-top:18px;font-size:14px;line-height:1.5;opacity:.9}
+  .plan.dark{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:0 18px 40px rgba(46,60,61,.22)}
+  .plan.dark .who{color:var(--cyan)}
+  .plan.dark .big{color:#fff}
+  .plan.light{background:#fff;color:var(--ink)}
+  .plan.light .who{color:var(--blue2)}
+  .plan.light .total{border-top-color:var(--line)}
+  .plan.light .total b{color:var(--navy)}
+  .plan .cta{display:flex;align-items:center;justify-content:center;box-sizing:border-box;
+      min-height:54px;margin-top:auto;text-decoration:none;font-weight:800;font-size:15px;
+      padding:0 22px;border-radius:9px;background:var(--cyan);color:#2E3C3D;border:2px solid transparent}
+  .plan.light .cta{background:#fff;color:var(--navy);border-color:var(--navy)}
+  .incluye{margin-top:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .incluye div{background:var(--soft);border-radius:12px;padding:16px 18px;font-size:14px;
+      border-left:3px solid var(--blue)}
+  .incluye b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:3px}
+  @media(max-width:900px){
+    .plans{grid-template-columns:1fr}
+    .incluye{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){ .incluye{grid-template-columns:1fr} }
+  @media(max-width:620px){
+    .plan .badge20{position:static;display:inline-block;margin-bottom:12px}
+  }
   .hero-cta{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;align-items:center}
   .hero-cta .micro{font-size:13px;color:#C3C9C8;max-width:26ch;line-height:1.4}
   .strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,.14);
@@ -357,6 +425,7 @@
       <a href="#temario">Temario completo</a>
       <a href="#metodo">Método</a>
       <a href="#aula">Aula virtual</a>
+      <a href="#precios">Precios</a>
       <a href="#convenio">Convenio CSIF</a>
       <a href="#faq">Dudas</a>
     </div>
@@ -369,6 +438,7 @@
   <a href="#temario">Temario</a>
   <a href="#metodo">Método</a>
   <a href="#aula">Aula virtual</a>
+  <a href="#precios">Precios</a>
   <a href="#convenio">CSIF</a>
   <a href="#faq">Dudas</a>
 </div>
@@ -403,6 +473,10 @@
           <span class="go">›</span>
         </a>
         <div class="hc-foot">Temario completo · 2 sesiones/semana · 4 h por sesión</div>
+        <div class="hc-price">
+          <div class="csif"><span class="tag20">−20 % CSIF</span><b>280 €</b><span>matrícula +</span><b>160 €</b><span>/mes</span></div>
+          <div><span>General</span><b class="old">350 €</b><i>·</i><b class="old">200 €</b><span>/mes</span></div>
+        </div>
       </aside>
     </div>
     <div class="strip">
@@ -789,6 +863,57 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- 7.bis PRECIOS -->
+<section id="precios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Cuánto cuesta</div>
+      <h2 style="margin-top:12px">Dos tarifas. La misma preparación.</h2>
+      <p>Una matrícula al entrar y una mensualidad mientras dura el curso. El temario, el aula virtual y
+        los test están incluidos: no se paga por asignatura ni por material.</p>
+    </div>
+
+    <div class="plans">
+      <div class="plan dark">
+        <div class="badge20">20 % MENOS</div>
+        <div class="who">Con el convenio CSIF Madrid</div>
+        <div class="big">280 € <small>de matrícula</small></div>
+        <div class="pl">+ <b>160 €</b> al mes</div>
+        <div class="total"><span>Total: matrícula + 3 mensualidades</span><b>760 €</b></div>
+        <div class="save">Ahorras 190 € frente al precio general</div>
+        <div class="cond">Si el curso se prolonga, se mantiene la mensualidad de 160 € hasta su finalización.</div>
+        <div class="inc">Para afiliados a CSIF Madrid y familiares de primer grado: cónyuge o pareja,
+          hijos y padres. La acreditación se hace al reservar.</div>
+        <a class="cta" href="#solicitud">Reservar con tarifa CSIF</a>
+      </div>
+
+      <div class="plan light">
+        <div class="who">Precio general</div>
+        <div class="big">350 € <small>de matrícula</small></div>
+        <div class="pl">+ <b>200 €</b> al mes</div>
+        <div class="total"><span>Total: matrícula + 3 mensualidades</span><b>950 €</b></div>
+        <div class="cond">Si el curso se prolonga, se mantiene la mensualidad de 200 € hasta su finalización.</div>
+        <div class="inc">Mismo curso, mismo temario, mismo profesorado y misma aula virtual. Cambia
+          solo la cuota; el contenido es idéntico.</div>
+        <a class="cta" href="#solicitud">Reservar a precio general</a>
+      </div>
+    </div>
+
+    <div class="incluye">
+      <div><b>Temario completo</b>Los temas oficiales, uno por uno, sin resúmenes.</div>
+      <div><b>Clases en directo</b>2 sesiones de 4 h por semana, 8 h semanales.</div>
+      <div><b>Grabación de cada sesión</b>Para quien no puede asistir en su turno.</div>
+      <div><b>Los 3 ejercicios</b>Test con penalización real, tema y supuesto práctico.</div>
+    </div>
+
+    <p style="margin-top:18px;font-size:13.5px;color:#6B7876">
+      El curso está <b>abierto a cualquier opositor</b>: la afiliación solo afecta al descuento, no al acceso.
+      La mensualidad se abona mientras el curso está en marcha: el total de 760 € / 950 € corresponde a un
+      curso de tres meses. Subinspección Sanitaria dura 96 h en 24 jornadas (unas 12 semanas); en Psicología
+      la duración se fijará con el calendario de su convocatoria.</p>
   </div>
 </section>
 
